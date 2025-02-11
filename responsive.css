@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+@media only screen and (max-width: 360px) {
+  #bodyContainer {
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+  }
+}
+/* NAVBAR */
+@media only screen and (max-width: 360px) {
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    height: 9vh;
+    padding: 0 0.6em;
+  }
+
+  /* LOGO */
+  #navbar img {
+    height: 1.2em;
+    filter: drop-shadow(0px 0px 0px red) invert(75%);
+  }
+  /* Hamburger Button */
+  #hamburger {
+    display: flex;
+  }
+  #hamburger div {
+    height: 1.3em;
+  }
+  #menu,
+  #logging {
+    display: none;
+  }
+}
+
+/* MAIN */
+
+@media only screen and (max-width: 360px) {
+  #main {
+    position: relative;
+    height: 80vh;
+  }
+  #mainBG {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    background-image: url(BG.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #mainBG #title {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    line-height: 140%;
+    z-index: 1;
+  }
+  #mainBG #subtitle {
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.6rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    z-index: 1;
+  }
+
+  #main #calendar {
+    position: absolute;
+    z-index: 1;
+    width: 95%;
+    height: 27vh;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 0px 55px rgba(87, 87, 87, 0.21);
+
+    font-size: 1.1rem;
+    text-align: left;
+    text-wrap: nowrap;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0.7em 0.7em;
+  }
+  #main #calendar #nav {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+  }
+  #main #calendar #nav #menu {
+    gap: 1.8rem;
+    font-size: small;
+  }
+  #main #calendar #nav #menu #hostelry {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+  }
+  #main #calendar #nav #search {
+    gap: 0.5em;
+  }
+
+  #main #calendar #title {
+    display: flex;
+    gap: 1em;
+    width: 82%;
+    justify-content: space-between;
+  }
+  #main #calendar #title span {
+    width: 25%;
+    font-size: 0.75em;
+    text-align: left;
+    color: rgb(134, 133, 133);
+    font-weight: 500;
+  }
+  #main #calendar #title span:hover {
+    color: black;
+    font-weight: 600;
+  }
+  #main #calendar #info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.3em;
+    gap: 1.3em;
+    justify-content: space-between;
+  }
+  #main #calendar #info #forms {
+    display: flex;
+    border-radius: 4px;
+    gap: 3.3em;
+    color: transparent;
+
+    background-color: #f7f7f700;
+  }
+  #main #calendar #info #forms i {
+    display: flex;
+    border-radius: 4px;
+    background-color: #ffffff00;
+  }
+  #main #calendar #info input {
+    display: none;
+  }
+  #main #calendar #info button {
+    border: none;
+    font-size: 1.2em;
+    display: flex;
+    background-color: #1aaac4;
+    color: white;
+    border-radius: 4px;
+    gap: 0.3em;
+
+    padding: 0.3rem 3em;
+    align-items: center;
+    justify-content: center;
+  }
+}
