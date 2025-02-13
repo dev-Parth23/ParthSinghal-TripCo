@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+::selection {
+  user-select: text;
+  color: black;
+  background-color: white;
+}
+#bodyContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+/* HEADING 2 */
+.heading2 {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.heading2 h3 {
+  color: #333333;
+  font-size: 3vmax;
+  font-weight: 600;
+}
+.heading2 h5 {
+  color: #868585;
+  font-weight: 400;
+}
+/* NAVBAR */
+/* NAVBAR */
+/* NAVBAR */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vw;
+}
+/* LOGO */
+#navbar img {
+  height: 3vmin;
+  filter: drop-shadow(0px 0px 0px red) invert(75%);
+}
+#hamburger {
+  display: none;
+}
+/* Menu */
+#menu {
+  display: flex;
+  gap: 4vw;
+}
+#menu span {
+  color: rgb(134, 133, 133);
+  font-weight: 500;
+  font-size: 2.8vmin;
+  text-decoration: none;
+}
+#menu span:hover {
+  color: black;
+  font-weight: 600;
+}
+/* Logging */
+#logging {
+  display: flex;
+  gap: 3vw;
+}
+#logging button {
+  font-size: 2.3vmin;
+  border: none;
+  color: rgb(134, 133, 133);
+  font-weight: 500;
+  background-color: transparent;
+  text-wrap: nowrap;
+}
+#logging button:hover {
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  text-wrap: nowrap;
+}
+#logging #signUp {
+  font-size: 2.3vmin;
+  color: white;
+  font-weight: 500;
+  background-color: #1ea5c4;
+  padding: 0.6em 0.8em;
+  border-radius: 3px;
+  text-wrap: nowrap;
+}
+/* Responsive */
+@media only screen and (max-width: 426px) {
+  #bodyContainer {
+    width: 92%;
+    margin: 1vh auto;
+  }
+  #navbar {
+    height: 8vw;
+  }
+  #navbar img {
+    height: 3.8vmin;
+  }
+  #hamburger {
+    display: flex;
+  }
+  #menu,
+  #logging {
+    display: none;
+  }
+}
+
+
+/* MAIN */
+/* MAIN */
+/* MAIN */
+#main {
+  position: relative;
+  height: 120vh;
+}
+#mainBG {
+  width: 100%;
+  height: 45vmax;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(BG.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#mainBG #title {
+  position: absolute;
+  text-align: center;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.05vmax;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  line-height: 120%;
+  z-index: 1;
+}
+#mainBG #subtitle {
+  position: absolute;
+  text-wrap: nowrap;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3vmax;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  z-index: 1;
+}
+#main #calendar {
+  position: absolute;
+  z-index: 1;
+
+  width: 90%;
+  height: 16vmax;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 17px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 0px 55px rgba(87, 87, 87, 0.21);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 500;
+  padding: 2em 2.3em;
+}
+#main #calendar #nav {
+  display: grid;
+  grid-template-columns: 50% auto;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+#main #calendar #nav #menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5vmax;
+  color: gray;
+}
+#main #calendar #nav #menu span:hover {
+  color: black;
+}
+#main #calendar #nav #menu #hostelry {
+  text-decoration: underline black;
+  text-underline-offset: 24px;
+}
+#main #calendar #nav #search {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  color: rgb(134, 133, 133);
+  font-weight: 500;
+  font-size: 1vmax;
+}
+#main #calendar #nav #search:hover {
+  color: black;
+  font-weight: 600;
+}
+#main #calendar #nav #search i {
+  font-size: 1vmax;
+}
+#main #calendar #info {
+  display: grid;
+  overflow-x: hidden;
+  padding-top: 16px;
+  grid-template-columns: 18% 18% 18% 18% 18%;
+  justify-content: space-between;
+  column-gap: 2vw;
+}
+#main #calendar #info .details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+#main #calendar #info .details span {
+  text-align: left;
+  font-size: 1.4vmax;
+  color: rgb(134, 133, 133);
+  font-weight: 500;
+}
+#main #calendar #info .details span:hover {
+  color: black;
+  font-weight: 600;
+}
+#main #calendar #info .details div {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  height: 6vh;
+  width: auto;
+  overflow: hidden;
+  padding-left: 0.7em;
+  background-color: #f8f8f8;
+}
+#main #calendar #info .details input {
+  text-align: left;
+  border: none;
+  width: 70%;
+  font-weight: 500;
+  background-color: transparent;
+  margin: 0;
+}
+#main #calendar #info .details input::placeholder {
+  padding-left: 1em;
+  font-size: 1vmax;
+  color: rgba(0, 0, 0, 0.688);
+}
+#main #calendar #info button {
+  margin: 2rem 1em 0 0;
+  display: flex;
+
+/* Responsive */
+@media only screen and (max-width: 426px) {
+  #bodyContainer {
+    width: 95%;
+  }
+  #main {
+    height: 80vh;
+  }
+  #mainBG {
+    height: 60vmin;
+    border-radius: 12px;
+  }
+  #mainBG #title {
+    width: 65%;
+    top: 25%;
+    font-size: 3.4vmax;
+  }
+  #mainBG #subtitle {
+    top: 45%;
+    font-size: 1.7vmax;
+  }
+  #main #calendar {
+    height: 52%;
+    top: 60%;
+    border-radius: 12px;
+    padding: 2vh 3vh;
+  }
+  #main #calendar #nav {
+    display: grid;
+    grid-template-columns: 60% auto;
+    padding-bottom: 10px;
+  }
+  #main #calendar #nav #menu #hostelry {
+    text-decoration: none;
+  }
+
+  #main #calendar #nav #search i {
+    font-size: smaller;
+  }
+
+  #main #calendar #info {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 4vw;
+    row-gap: 2vw;
+    padding: 2vh;
+  }
+
+  #main #calendar #info button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0.2rem;
+    padding: 1vmin 2vmin;
+    border-radius: 4px;
+  }
+}
+@media only screen and (min-width: 650px) and (max-width: 700px) {
+  #main #calendar {
+    height: 28vh;
+    top: 65%;
+    padding: 1em 2.3em;
+  }
+
+  #mainBG #title {
+    font-size: 5vmin;
+  }
+  #mainBG #subtitle {
+    font-size: 2vmin;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 650px) {
+  #main #calendar {
+    height: 28vh;
+    top: 60%;
+    padding: 2.3vmin 2vmin;
+  }
+
+  #mainBG #title {
+    font-size: 5vmin;
+  }
+  #mainBG #subtitle {
+    font-size: 2vmin;
+  }
+}
+
+/* POPULAR PLACE */
+/* POPULAR PLACE */
+/* POPULAR PLACE */
+#popularPlace {
+  width: 100%;
+  height: 100vh;
+  margin-top: 5rem;
+}
+#popularPlace .heading1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+#popularPlace .heading1 #headingL {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3vmax;
+  width: 32%;
+}
+#popularPlace .heading1 #headingL h3 {
+  margin: 0;
+  color: #333333;
+  font-weight: 600;
+  font-size: 4vmax;
+}
+#popularPlace .heading1 #headingL h5 {
+  margin: 0;
+  color: rgb(134, 133, 133);
+  font-weight: 400;
+  font-size: 2vmax;
+}
+#popularPlace .heading1 #headingR {
+  width: 45%;
+}
+#popularPlace .heading1 #headingR p {
+  margin: 0;
+  color: rgb(134, 133, 133);
+  font-size: 1.25vmax;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+#popularPlace #cards {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  overflow-x: auto;
+  gap: 4.5rem;
+}
+#popularPlace #cards .card {
+  width: 20%;
+  height: 30vw;
+  box-shadow: none;
+  border: none;
+  flex-shrink: 0;
+  position: relative;
+}
+#popularPlace #cards .card img {
+  height: 18vw;
+  width: 18vw;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#popularPlace #cards .card #tag {
+  position: absolute;
+  color: black;
+  background-color: #f9f9fa;
+  top: 3%;
+  right: 5%;
+  border-radius: 7px;
+  font-size: 0.7rem;
+  box-shadow: 10px #333333;
+  padding: 0.2rem 0.7rem;
+  font-weight: 700;
+}
+#popularPlace #cards .card #content {
+  display: flex;
+  flex-direction: column;
+}
+#popularPlace #cards .card #content h5 {
+  margin: 0.4rem 0 0 0;
+  font-weight: 650;
+  font-size: 1.25vmax;
+}
+#popularPlace #cards .card #content h6 {
+  color: #afafaf;
+  font-size: 1.25vmax;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media only screen and (max-width: 426px) {
+  #popularPlace .heading1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vmax;
+    align-items: center;
+    text-align: center;
+  }
+  #popularPlace .heading1 #headingL {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1vmax;
+    width: auto;
+  }
+  #popularPlace .heading1 #headingL h3 {
+    margin: 0;
+    color: #333333;
+    font-weight: 600;
+    font-size: 6vmax;
+  }
+  #popularPlace .heading1 #headingL h5 {
+    margin: 0;
+    color: rgb(134, 133, 133);
+    font-weight: 500;
+    font-size: 3vmax;
+  }
+  #popularPlace .heading1 #headingR {
+    width: 75%;
+  }
+  #popularPlace .heading1 #headingR p {
+    margin: 0;
+    color: rgb(134, 133, 133);
+    font-size: 1.8vmax;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  #popularPlace #cards {
+    width: 95%;
+    height: 50vh;
+    margin-top: 5vmax;
+    display: grid;
+    grid-template-columns: auto auto;
+    overflow-y: auto;
+  }
+  #popularPlace #cards .card {
+    width: 40%;
+    height: 30vh;
+    box-shadow: none;
+    border: none;
+    flex-shrink: 0;
+    position: relative;
+  }
+  #popularPlace #cards .card img {
+    height: 25vmax;
+    width: 25vmax;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  #popularPlace #cards .card #tag {
+    position: absolute;
+    color: black;
+    background-color: #f9f9fa;
+    top: 3%;
+    right: 5%;
+    border-radius: 7px;
+    font-size: 0.7rem;
+    box-shadow: 10px #333333;
+    padding: 0.2rem 0.7rem;
+    font-weight: 700;
+  }
+  #popularPlace #cards .card #content {
+    display: flex;
+    flex-direction: column;
+  }
+  #popularPlace #cards .card #content h5 {
+    margin: 0.8em 0 0 0;
+    font-weight: 700;
+    font-size: larger;
+  }
+  #popularPlace #cards .card #content h6 {
+    color: #afafaf;
+    font-size: small;
+  }
+}
+
+/* Travel to make sweet memories */
+/* Travel to make sweet memories */
+/* Travel to make sweet memories */
+#memories {
+  width: 100%;
+}
+#memories .heading2 {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+#memories .heading2 h3 {
+  color: #333333;
+  font-weight: 600;
+}
+#memories .heading2 h5 {
+  color: #868585;
+  font-weight: 400;
+}
+
+#memories #content {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+#memories #content #left {
+  width: 40%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+#memories #content #right {
+  width: 48%;
+  height: 100%;
+}
+}

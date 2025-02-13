@@ -1,0 +1,1107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+::selection {
+  user-select: text;
+  color: black;
+  background-color: white;
+}
+#bodyContainer {
+  width: 85%;
+  margin: 0 auto;
+}
+/* HEADING 1 */
+/* HEADING 1 */
+/* HEADING 1 */
+.heading1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+.heading1 #headingL {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3vmax;
+  width: 32%;
+}
+.heading1 #headingL h3 {
+  margin: 0;
+  color: #333333;
+  font-weight: 600;
+  font-size: 4vmax;
+}
+.heading1 #headingL h5 {
+  margin: 0;
+  color: rgb(134, 133, 133);
+  font-weight: 400;
+  font-size: 1.9vmax;
+}
+.heading1 #headingR {
+  width: 45%;
+}
+.heading1 #headingR p {
+  margin: 0;
+  color: rgb(134, 133, 133);
+  font-size: 1.25vmax;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+/* HEADING 2 */
+/* HEADING 2 */
+/* HEADING 2 */
+.heading2 {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.heading2 h3 {
+  color: #333333;
+  font-size: 3vmax;
+  font-weight: 600;
+  padding-bottom: 1.5vmin;
+}
+.heading2 h5 {
+  color: #868585;
+  font-size: 1.7vmax;
+  font-weight: 400;
+}
+
+/* NAVBAR */
+/* NAVBAR */
+/* NAVBAR */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vw;
+}
+/* LOGO */
+#navbar img {
+  height: 3vmin;
+  filter: drop-shadow(0px 0px 0px red) invert(75%);
+}
+#hamburger {
+  display: none;
+}
+/* Menu */
+#menu {
+  display: flex;
+  gap: 4vw;
+}
+#menu span {
+  color: rgb(134, 133, 133);
+  font-weight: 500;
+  font-size: 2.8vmin;
+  text-decoration: none;
+}
+#menu span:hover {
+  color: black;
+  font-weight: 600;
+}
+/* Logging */
+#logging {
+  display: flex;
+  gap: 3vw;
+}
+#logging button {
+  font-size: 2.3vmin;
+  border: none;
+  color: rgb(134, 133, 133);
+  font-weight: 500;
+  background-color: transparent;
+  text-wrap: nowrap;
+}
+#logging button:hover {
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  text-wrap: nowrap;
+}
+#logging #signUp {
+  font-size: 2.3vmin;
+  color: white;
+  font-weight: 500;
+  background-color: #1ea5c4;
+  padding: 0.6em 0.8em;
+  border-radius: 3px;
+  text-wrap: nowrap;
+}
+
+/* MAIN */
+/* MAIN */
+/* MAIN */
+#main {
+  position: relative;
+  height: 120vh;
+}
+#mainBG {
+  width: 100%;
+  height: 45vmax;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(BG.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#mainBG #title {
+  position: absolute;
+  text-align: center;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.05vmax;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  line-height: 120%;
+  z-index: 1;
+}
+#mainBG #subtitle {
+  position: absolute;
+  text-wrap: nowrap;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3vmax;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  z-index: 1;
+}
+#main #calendar {
+  position: absolute;
+  z-index: 1;
+
+  width: 90%;
+  height: 16vmax;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 17px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 0px 55px rgba(87, 87, 87, 0.21);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 500;
+  padding: 2em 2.3em;
+}
+#main #calendar #nav {
+  display: grid;
+  grid-template-columns: 50% auto;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+#main #calendar #nav #menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5vmax;
+  color: gray;
+}
+#main #calendar #nav #menu span:hover {
+  color: black;
+}
+#main #calendar #nav #menu #hostelry {
+  text-decoration: underline black;
+  text-underline-offset: 24px;
+}
+#main #calendar #nav #search {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  color: rgb(134, 133, 133);
+  font-weight: 500;
+  font-size: 1vmax;
+}
+#main #calendar #nav #search:hover {
+  color: black;
+  font-weight: 600;
+}
+#main #calendar #nav #search i {
+  font-size: 1vmax;
+}
+#main #calendar #info {
+  display: grid;
+  overflow-x: hidden;
+  padding-top: 16px;
+  grid-template-columns: 18% 18% 18% 18% 18%;
+  justify-content: space-between;
+  column-gap: 2vw;
+}
+#main #calendar #info .details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+#main #calendar #info .details span {
+  text-align: left;
+  font-size: 1.3vmax;
+  color: rgb(134, 133, 133);
+  font-weight: 500;
+}
+#main #calendar #info .details span:hover {
+  color: black;
+  font-weight: 600;
+}
+#main #calendar #info .details div {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  height: 6vh;
+  width: auto;
+  overflow: hidden;
+  padding-left: 0.7em;
+  background-color: #f8f8f8;
+}
+#main #calendar #info .details input {
+  text-align: left;
+  border: none;
+  width: 80%;
+  font-weight: 500;
+  background-color: transparent;
+  margin: 0 0 0 0.7em;
+}
+#main #calendar #info .details input::placeholder {
+  padding-left: 0.2em;
+  font-size: 1vmax;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.688);
+}
+#main #calendar #info button {
+  margin: 2rem 1em 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5vmax;
+  border: none;
+  background-color: #17acc5;
+  color: white;
+}
+
+/* POPULAR PLACE */
+/* POPULAR PLACE */
+/* POPULAR PLACE */
+#popularPlace {
+  width: 100%;
+  height: 90vh;
+  margin-top: 5rem;
+}
+#popularPlace #cards {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  overflow-x: auto;
+  gap: 4.5rem;
+}
+#popularPlace #cards .card {
+  width: 20%;
+  height: 30vw;
+  box-shadow: none;
+  border: none;
+  flex-shrink: 0;
+  position: relative;
+}
+#popularPlace #cards .card img {
+  height: 18vw;
+  width: 18vw;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#popularPlace #cards .card #tag {
+  position: absolute;
+  color: black;
+  background-color: #f9f9fa;
+  top: 3%;
+  right: 5%;
+  border-radius: 7px;
+  font-size: 0.7rem;
+  box-shadow: 10px #333333;
+  padding: 0.2rem 0.7rem;
+  font-weight: 700;
+}
+#popularPlace #cards .card #content {
+  display: flex;
+  flex-direction: column;
+}
+#popularPlace #cards .card #content div {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  margin: 0;
+}
+#popularPlace #cards .card #content h5 {
+  margin: 0.4rem 0 0 0;
+  font-weight: 650;
+  font-size: 1.25vmax;
+}
+#popularPlace #cards .card #content h6 {
+  color: #afafaf;
+  font-size: 1.25vmax;
+  font-weight: 500;
+}
+
+/* Travel to make sweet memories */
+/* Travel to make sweet memories */
+/* Travel to make sweet memories */
+#memories {
+  width: 100%;
+}
+
+#memories #content {
+  height: 120vh;
+  padding-top: 4rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+#memories #content #right {
+  background-color: #868585;
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  height: 100%;
+}
+#memories #content #right #imgContainer {
+  width: 63%;
+  height: 100%;
+  background-color: #1ea5c4;
+  border-radius: 45px;
+  overflow: hidden;
+  background-image: url(https://images.pexels.com/photos/1666021/pexels-photo-1666021.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-position: center;
+  background-size: cover;
+  image-resolution: 40000dpi;
+  mask-repeat: no-repeat;
+}
+#memories #content #right .reviews {
+  position: absolute;
+  background-color: #fcfcff;
+  padding: 0.7vmax;
+  border-radius: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+::selection {
+  user-select: text;
+  color: black;
+  background-color: white;
+}
+#bodyContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+/* HEADING 1 */
+/* HEADING 1 */
+/* HEADING 1 */
+.heading1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+.heading1 #headingL {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3vmax;
+  width: 32%;
+}
+.heading1 #headingL h3 {
+  margin: 0;
+  color: #333333;
+  font-weight: 600;
+  font-size: 4vmax;
+}
+.heading1 #headingL h5 {
+  margin: 0;
+  color: rgb(134, 133, 133);
+  font-weight: 400;
+  font-size: 2vmax;
+}
+.heading1 #headingR {
+  width: 45%;
+}
+.heading1 #headingR p {
+  margin: 0;
+  color: rgb(134, 133, 133);
+  font-size: 1.25vmax;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+/* HEADING 2 */
+/* HEADING 2 */
+/* HEADING 2 */
+.heading2 {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.heading2 h3 {
+  color: #333333;
+  font-size: 3vmax;
+  font-weight: 600;
+  padding-bottom: 1.5vmin;
+}
+.heading2 h5 {
+  color: #868585;
+  font-size: 1.7vmax;
+  font-weight: 400;
+}
+
+/* NAVBAR */
+/* NAVBAR */
+/* NAVBAR */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vw;
+}
+/* LOGO */
+#navbar img {
+  height: 3vmin;
+  filter: drop-shadow(0px 0px 0px red) invert(75%);
+}
+#hamburger {
+  display: none;
+}
+/* Menu */
+#menu {
+  display: flex;
+  gap: 4vw;
+}
+#menu span {
+  color: rgb(134, 133, 133);
+  font-weight: 500;
+  font-size: 2.8vmin;
+  text-decoration: none;
+}
+#menu span:hover {
+  color: black;
+  font-weight: 600;
+}
+/* Logging */
+#logging {
+  display: flex;
+  gap: 3vw;
+}
+#logging button {
+  font-size: 2.3vmin;
+  border: none;
+  color: rgb(134, 133, 133);
+  font-weight: 500;
+  background-color: transparent;
+  text-wrap: nowrap;
+}
+#logging button:hover {
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  text-wrap: nowrap;
+}
+#logging #signUp {
+  font-size: 2.3vmin;
+  color: white;
+  font-weight: 500;
+  background-color: #1ea5c4;
+  padding: 0.6em 0.8em;
+  border-radius: 3px;
+  text-wrap: nowrap;
+}
+
+/* MAIN */
+/* MAIN */
+/* MAIN */
+#main {
+  position: relative;
+  height: 120vh;
+}
+#mainBG {
+  width: 100%;
+  height: 45vmax;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(BG.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#mainBG #title {
+  position: absolute;
+  text-align: center;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.05vmax;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  line-height: 120%;
+  z-index: 1;
+}
+#mainBG #subtitle {
+  position: absolute;
+  text-wrap: nowrap;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3vmax;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  z-index: 1;
+}
+#main #calendar {
+  position: absolute;
+  z-index: 1;
+
+  width: 90%;
+  height: 16vmax;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 17px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 0px 55px rgba(87, 87, 87, 0.21);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 500;
+  padding: 2em 2.3em;
+}
+#main #calendar #nav {
+  display: grid;
+  grid-template-columns: 50% auto;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+#main #calendar #nav #menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5vmax;
+  color: gray;
+}
+#main #calendar #nav #menu span:hover {
+  color: black;
+}
+#main #calendar #nav #menu #hostelry {
+  text-decoration: underline black;
+  text-underline-offset: 24px;
+}
+#main #calendar #nav #search {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  color: rgb(134, 133, 133);
+  font-weight: 500;
+  font-size: 1vmax;
+}
+#main #calendar #nav #search:hover {
+  color: black;
+  font-weight: 600;
+}
+#main #calendar #nav #search i {
+  font-size: 1vmax;
+}
+#main #calendar #info {
+  display: grid;
+  overflow-x: hidden;
+  padding-top: 16px;
+  grid-template-columns: 18% 18% 18% 18% 18%;
+  justify-content: space-between;
+  column-gap: 2vw;
+}
+#main #calendar #info .details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+#main #calendar #info .details span {
+  text-align: left;
+  font-size: 1.3vmax;
+  color: rgb(134, 133, 133);
+  font-weight: 500;
+}
+#main #calendar #info .details span:hover {
+  color: black;
+  font-weight: 600;
+}
+#main #calendar #info .details div {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  height: 6vh;
+  width: auto;
+  overflow: hidden;
+  padding-left: 0.7em;
+  background-color: #f8f8f8;
+}
+#main #calendar #info .details input {
+  text-align: left;
+  border: none;
+  width: 80%;
+  font-weight: 500;
+  background-color: transparent;
+  margin: 0 0 0 0.7em;
+}
+#main #calendar #info .details input::placeholder {
+  padding-left: 0.2em;
+  font-size: 1vmax;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.688);
+}
+#main #calendar #info button {
+  margin: 2rem 1em 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5vmax;
+  border: none;
+  background-color: #17acc5;
+  color: white;
+}
+
+/* POPULAR PLACE */
+/* POPULAR PLACE */
+/* POPULAR PLACE */
+#popularPlace {
+  width: 100%;
+  height: 100vh;
+  margin-top: 5rem;
+}
+#popularPlace #cards {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  overflow-x: auto;
+  gap: 4.5rem;
+}
+#popularPlace #cards .card {
+  width: 20%;
+  height: 30vw;
+  box-shadow: none;
+  border: none;
+  flex-shrink: 0;
+  position: relative;
+}
+#popularPlace #cards .card img {
+  height: 18vw;
+  width: 18vw;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#popularPlace #cards .card #tag {
+  position: absolute;
+  color: black;
+  background-color: #f9f9fa;
+  top: 3%;
+  right: 5%;
+  border-radius: 7px;
+  font-size: 0.7rem;
+  box-shadow: 10px #333333;
+  padding: 0.2rem 0.7rem;
+  font-weight: 700;
+}
+#popularPlace #cards .card #content {
+  display: flex;
+  flex-direction: column;
+}
+#popularPlace #cards .card #content h5 {
+  margin: 0.4rem 0 0 0;
+  font-weight: 650;
+  font-size: 1.25vmax;
+}
+#popularPlace #cards .card #content h6 {
+  color: #afafaf;
+  font-size: 1.25vmax;
+  font-weight: 500;
+}
+
+/* Travel to make sweet memories */
+/* Travel to make sweet memories */
+/* Travel to make sweet memories */
+#memories {
+  width: 100%;
+  margin-bottom: 10vmax;
+}
+
+#memories #content {
+  height: 120vh;
+  padding-top: 4rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+#memories #content #right {
+  width: 55%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+#memories #content #right #imgContainer {
+  width: 63%;
+  height: 100%;
+  border-radius: 35px;
+  overflow: hidden;
+  background-image: url(https://images.pexels.com/photos/1666021/pexels-photo-1666021.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-position: center;
+  background-size: cover;
+  image-resolution: 40000dpi;
+  mask-repeat: no-repeat;
+}
+#memories #content #right .reviews {
+  position: absolute;
+  box-shadow: 10px 0px 55px rgba(0, 0, 0, 0.3);
+  padding: 0.9vmax 0.75vmax;
+  border-radius: 10px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+#memories #content #right .reviews span {
+  font-size: 1.3vmax;
+  font-weight: 600;
+}
+#memories #content #right .reviews div {
+  font-size: 1.1vmax;
+  font-weight: 500;
+}
+#memories #content #right img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+#memories #content #right #R1 {
+  top: 12%;
+  left: 5%;
+  background-color: #fcfcffc1;
+}
+#memories #content #right #R2 {
+  top: 45%;
+  right: 6%;
+  background-color: #fcfcffe7;
+}
+#memories #content #right #R3 {
+  top: 75%;
+  left: 5%;
+  background-color: #fcfcffdf;
+}
+
+#memories #content #left {
+  width: 33%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#memories #content #left div {
+  height: 22%;
+}
+#memories #content #left .index {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 0em 1.7vmin;
+  font-size: 2.7vmin;
+  border-radius: 10%;
+}
+#memories #content #left .heading {
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-size: 3.5vmin;
+  font-weight: 600;
+}
+#memories #content #left .text {
+  color: rgb(134, 133, 133);
+  text-align: left;
+  font-size: 2.7vmin;
+}
+#memories #content #left button {
+  color: rgb(255, 255, 255);
+  background-color: #17acc5;
+  border: none;
+  text-align: center;
+  width: fit-content;
+  border-radius: 7px;
+  padding: 1vw 4vh;
+  font-size: 2vmin;
+}
+/* Explore more */
+/* Explore more */
+/* Explore more */
+#exploreMore {
+  width: 100%;
+  margin-bottom: 10vmax;
+}
+/* buttons */
+#exploreMore #filter {
+  padding-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+#exploreMore #filter #tags {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+#exploreMore #filter #tags button {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background-color: #f8f8f8;
+  color: black;
+  font-size: 0.9em;
+  font-weight: 500;
+  border-radius: 7px;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+}
+#exploreMore button {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border: 2px solid #e2e2e2;
+  background-color: transparent;
+  color: black;
+  font-size: 0.9em;
+  font-weight: 600;
+  border-radius: 13px;
+  padding: 0.7em 1em;
+  text-wrap: nowrap;
+  cursor: pointer;
+}
+#exploreMore #showMore {
+  margin: 0 auto;
+}
+
+/* CARDS */
+#exploreMore #cards {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#exploreMore #cards .card {
+  width: 57vmin;
+  height: 60vmin;
+  flex-shrink: 0;
+  position: relative;
+  /* background-color: #1ea5c4; */
+  flex-shrink: 0;
+}
+#exploreMore #cards .card img {
+  height: 100%;
+  width: 100%;
+}
+#exploreMore #cards .card #image {
+  height: 65%;
+  overflow: hidden;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+#exploreMore #cards .card #tag {
+  position: absolute;
+  color: black;
+  background-color: #f9f9fa;
+  top: 3%;
+  right: 5%;
+  border-radius: 7px;
+  font-size: 0.7rem;
+  box-shadow: 10px #333333;
+  padding: 0.2rem 0.7rem;
+  font-weight: 700;
+}
+
+#exploreMore #cards .card #content {
+  padding-top: 1.5vmin;
+}
+#exploreMore #cards .card #content .heading1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+#exploreMore #cards .card #content .heading1 #headingL {
+  display: flex;
+  flex-direction: column;
+  gap: 0vmax;
+}
+#exploreMore #cards .card #content .heading1 #headingL h3 {
+  margin: 0;
+  color: #333333;
+  font-weight: 600;
+  font-size: 3vmin;
+  text-wrap: nowrap;
+}
+#exploreMore #cards .card #content .heading1 #headingL span {
+  display: flex;
+  align-items: center;
+  gap: 0.9vmax;
+}
+#exploreMore #cards .card #content .heading1 #headingL h5 {
+  margin: 0;
+  color: rgb(134, 133, 133);
+  font-weight: 400;
+  padding-top: 10%;
+  font-size: 2.5vmin;
+}
+#exploreMore #cards .card #content .heading1 #headingR {
+  width: fit-content;
+}
+#exploreMore #cards .card #content .heading1 #headingR span {
+  font-size: 1.25vmax;
+  padding-top: 12%;
+}
+#exploreMore #cards .card #content .heading1 #headingR p {
+  margin: 0;
+  font-size: 4vmin;
+  color: black;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+/* Let's go on an adventure */
+/* Let's go on an adventure */
+/* Let's go on an adventure */
+#adventure #cards {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  overflow-x: auto;
+  gap: 4.5rem;
+}
+#adventure #cards .card {
+  width: 20%;
+  height: 30vw;
+  box-shadow: none;
+  border: none;
+  flex-shrink: 0;
+  position: relative;
+}
+#adventure #cards .card img {
+  height: 18vw;
+  width: 18vw;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#adventure #cards .card #tag {
+  position: absolute;
+  color: black;
+  background-color: #f9f9fa;
+  top: 3%;
+  right: 5%;
+  border-radius: 7px;
+  font-size: 0.7rem;
+  box-shadow: 10px #333333;
+  padding: 0.2rem 0.7rem;
+  font-weight: 700;
+}
+#adventure #cards .card #content {
+  display: flex;
+  flex-direction: column;
+}
+#adventure #cards .card #content div {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  margin: 0;
+}
+#adventure #cards .card #content h5 {
+  margin: 0.4rem 0 0 0;
+  font-weight: 650;
+  font-size: 1.25vmax;
+}
+#adventure #cards .card #content h6 {
+  color: #afafaf;
+  font-size: 1.25vmax;
+  font-weight: 500;
+}
+
+/* Book tickets and go now! */
+/* Book tickets and go now! */
+/* Book tickets and go now! */
+#tickets {
+  width: 100%;
+}
+
+#tickets #heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#tickets #heading h3 {
+  margin: 0;
+  color: #333333;
+  font-weight: 600;
+  font-size: 6vmin;
+}
+#tickets #heading button {
+  color: rgb(255, 255, 255);
+  background-color: #17acc5;
+  border: none;
+  text-align: center;
+  width: fit-content;
+  border-radius: 7px;
+  padding: 0.8vw 2.5vw;
+  font-size: 3vmin;
+}
+#tickets video {
+  margin: 3rem 0;
+  width: 100%;
+  height: 90vh;
+  border-radius: 30px;
+  overflow: hidden;
+  object-fit: cover;
+}
+/* Footer */
+/* Footer */
+/* Footer */
+footer {
+  width: 100%;
+  height: 45vh;
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}

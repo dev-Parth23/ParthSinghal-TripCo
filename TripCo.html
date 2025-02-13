@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="TripCo.css" />
+    <!-- Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="bodyContainer">
+      <!-- NAVBAR -->
+      <navbar id="navbar">
+        <div id="logo">
+          <img
+            src="https://tripco.africa/images/logo/tripco-white-orangedot.svg"
+            alt="Tripco Logo"
+          />
+        </div>
+        <div id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div id="menu">
+          <span>Home</span>
+          <span>Ticket</span>
+          <span>Explore</span>
+          <span>Activity</span>
+        </div>
+        <div id="logging">
+          <button>Sign In</button>
+          <button id="signUp">Sign Up</button>
+        </div>
+      </navbar>
+      <!-- MAIN -->
+      <section id="main">
+        <div id="mainBG">
+          <div id="title">Explore the whole world and enjoy its beauty</div>
+          <div id="subtitle">
+            Find and write about your experiences around the world.
+          </div>
+        </div>
+        <div id="calendar">
+          <div id="nav">
+            <div id="menu">
+              <span id="hostelry">Hostelry</span>
+              <span>Flights</span>
+              <span>Bus & Shuttle</span>
+              <span>Cars</span>
+            </div>
+
+            <div id="search">
+              Last Searching<i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <hr />
+          <div id="info">
+            <div class="details">
+              <span>Destination</span>
+              <div>
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="color: #1aaac4; font-size: 3vmin"
+                ></i>
+                <input type="text" placeholder="Bali, Indonesia" />
+              </div>
+            </div>
+            <div class="details">
+              <span>Check-in</span>
+              <div>
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="color: #1aaac4; font-size: 3vmin"
+                ></i>
+                <input type="text" placeholder="Sat, 2 Dec 2022" />
+              </div>
+            </div>
+            <div class="details">
+              <span>Check-out</span>
+              <div>
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="color: #1aaac4; font-size: 3vmin"
+                ></i>
+                <input type="text" placeholder="Sun, 3 Dec 2022" />
+              </div>
+            </div>
+            <div class="details">
+              <span>Room & Guest</span>
+              <div>
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="color: #1aaac4; font-size: 3vmin"
+                ></i>
+                <input type="text" placeholder="1 Room, 2 Guest" />
+              </div>
+            </div>
+            <button><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+          </div>
+        </div>
+      </section>
+      <!-- Popular place -->
+      <section id="popularPlace">
+        <div class="heading1">
+          <div id="headingL">
+            <h3>Popular Place</h3>
+            <h5>Let's enjoy this heaven on earth</h5>
+          </div>
+          <div id="headingR">
+            <p>
+              Many places are very famous, beautiful, clean, and will give a
+              very <br />deep impression to visitors and will make them come
+              back.
+            </p>
+          </div>
+        </div>
+        <!-- Cards -->
+        <div id="cards">
+          <div class="card">
+            <div id="image">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/51/9d/8d/best-island-in-the-philippines.jpg?w=1000&h=1000&s=1"
+                alt=""
+              />
+              <div id="tag">20% OFF</div>
+            </div>
+            <div id="content">
+              <h5>SC. Mindanou</h5>
+              <div>
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="padding-top: 0.7em; color: #1aaac4"
+                ></i>
+                <h6>Mindanou, Philippines</h6>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div id="image">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/64596cc852161f028641373d/1683588260987-D4U756D9U6NPPVECAI21/image10.jpeg"
+                alt="Disneyland"
+              />
+              <div id="tag">20% OFF</div>
+            </div>
+            <div id="content">
+              <h5>Disneyland Tokyo</h5>
+              <div>
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="padding-top: 0.7em; color: #1aaac4"
+                ></i>
+                <h6>Tokyo, Japan</h6>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div id="image">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/51/9d/8d/best-island-in-the-philippines.jpg?w=1000&h=1000&s=1"
+                alt=""
+              />
+              <div id="tag">20% OFF</div>
+            </div>
+            <div id="content">
+              <h5>SC. Mindanou</h5>
+              <div>
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="padding-top: 0.7em; color: #1aaac4"
+                ></i>
+                <h6>Mindanou, Philippines</h6>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div id="image">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/64596cc852161f028641373d/1683588260987-D4U756D9U6NPPVECAI21/image10.jpeg"
+                alt="Disneyland"
+              />
+              <div id="tag">20% OFF</div>
+            </div>
+            <div id="content">
+              <h5>Disneyland Tokyo</h5>
+              <div>
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="padding-top: 0.7em; color: #1aaac4"
+                ></i>
+                <h6>Tokyo, Japan</h6>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div id="image">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/51/9d/8d/best-island-in-the-philippines.jpg?w=1000&h=1000&s=1"
+                alt=""
+              />
+              <div id="tag">20% OFF</div>
+            </div>
+            <div id="content">
+              <h5>SC. Mindanou</h5>
+              <div>
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="padding-top: 0.7em; color: #1aaac4"
+                ></i>
+                <h6>Mindanou, Philippines</h6>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div id="image">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/64596cc852161f028641373d/1683588260987-D4U756D9U6NPPVECAI21/image10.jpeg"
+                alt="Disneyland"
+              />
+              <div id="tag">20% OFF</div>
+            </div>
+            <div id="content">
+              <h5>Disneyland Tokyo</h5>
+              <div>
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="padding-top: 0.7em; color: #1aaac4"
+                ></i>
+                <h6>Tokyo, Japan</h6>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div id="image">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/51/9d/8d/best-island-in-the-philippines.jpg?w=1000&h=1000&s=1"
+                alt=""
+              />
+              <div id="tag">20% OFF</div>
+            </div>
+            <div id="content">
+              <h5>SC. Mindanou</h5>
+              <div>
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="padding-top: 0.7em; color: #1aaac4"
+                ></i>
+                <h6>Mindanou, Philippines</h6>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div id="image">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/64596cc852161f028641373d/1683588260987-D4U756D9U6NPPVECAI21/image10.jpeg"
+                alt="Disneyland"
+              />
+              <div id="tag">20% OFF</div>
+            </div>
+            <div id="content">
+              <h5>Disneyland Tokyo</h5>
+              <div>
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="padding-top: 0.7em; color: #1aaac4"
+                ></i>
+                <h6>Tokyo, Japan</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Travel to make sweet memories -->
+      <section id="memories">
+        <div class="heading2">
+          <h3>Travel to make sweet memories</h3>
+          <h5>Find trips that fit a flexible lifestyle</h5>
+        </div>
+        <div id="content">
+          <div id="left">
+            <!-- R1 -->
+            <div
+              style="
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+              "
+            >
+              <div class="index" style="background-color: #78bae4">01</div>
+              <div class="heading">Find trips that fit your freedom</div>
+              <div class="text">
+                Travelling offers freedom and flexibility, solitude and
+                spontaneity, and privacy and purpose.
+              </div>
+            </div>
+            <!-- R2 -->
+            <div
+              style="
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+              "
+            >
+              <div class="index" style="background-color: #8297e9">02</div>
+              <div class="heading">Find trips that fit your freedom</div>
+              <div class="text">
+                Travelling offers freedom and flexibility, solitude and
+                spontaneity, and privacy and purpose.
+              </div>
+            </div>
+            <!-- R3 -->
+            <div
+              style="
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+              "
+            >
+              <div class="index" style="background-color: #4fbe77">03</div>
+              <div class="heading">Find trips that fit your freedom</div>
+              <div class="text">
+                Travelling offers freedom and flexibility, solitude and
+                spontaneity, and privacy and purpose.
+              </div>
+            </div>
+            <!-- Start Button -->
+
+            <button>Start your Explore</button>
+          </div>
+          <div id="right">
+            <div id="imgContainer"></div>
+            <div id="R1" class="reviews">
+              <img
+                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFsZSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                alt=""
+              />
+              <div>
+                <span>Kamelia Diana</span>
+                <div>* 4.9</div>
+              </div>
+            </div>
+            <div id="R2" class="reviews">
+              <img
+                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFsZSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                alt=""
+              />
+              <div>
+                <span>Kamelia Diana</span>
+                <div>* 4.9</div>
+              </div>
+            </div>
+            <div id="R3" class="reviews">
+              <img
+                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFsZSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                alt=""
+              />
+              <div>
+                <span>Kamelia Diana</span>
+                <div>* 4.9</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Explore more -->
+      <section id="exploreMore">
+        <div class="heading1">
+          <div id="headingL">
+            <h3>Explore more</h3>
+            <h5>Let's go on an adventure</h5>
+          </div>
+          <div id="headingR">
+            <p>
+              All-inclusive vacations and flights to the Caribbean, Indonesian,
+              and<br />
+              more than 1,300 destinations worldwide. Let's explore now.
+            </p>
+          </div>
+        </div>
+        <!-- Filter Buttons -->
+        <div id="filter">
+          <div id="tags">
+            <button
+              style="background-color: #333333; color: rgb(255, 255, 255)"
+            >
+              Popular destination
+            </button>
+            <button>Islands</button>
+            <button>Surfing</button>
+            <button>National Parks</button>
+            <button>Lake</button>
+            <button>Beach</button>
+            <button>Camp</button>
+          </div>
+          <button>
+            <span>Filters</span>
+            <i class="fa-solid fa-sliders"></i>
+          </button>
+        </div>
+        <!-- Cards -->
+        <div id="cards">
+          <div class="card">
+            <div id="image">
+              <img
+                src="https://www.travelandleisure.com/thmb/pqFqLzMwubb0es_Ubg9o-KRpskk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/best-time-to-visit-AMALFI0622-e442428423b94e41a3817f3192ba0c2b.jpg"
+                alt=""
+              />
+              <div id="tag">⭐4.9</div>
+            </div>
+            <div id="content">
+              <div class="heading1">
+                <div id="headingL">
+                  <h3>Amalfi Coast</h3>
+                  <span>
+                    <i
+                      class="fa-solid fa-location-dot"
+                      style="padding-top: 0.7em; color: #1aaac4"
+                    ></i>
+                    <h5>Amalfi, Italy</h5>
+                  </span>
+                </div>
+                <div id="headingR">
+                  <p>$148/<span>Pax</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div id="image">
+              <img
+                src="https://cdn.osaka-info.jp/page_translation/content/b5da18b2-1442-11e8-9226-0af0cba29dd8.jpeg"
+                alt=""
+              />
+              <div id="tag">⭐4.9</div>
+            </div>
+            <div id="content">
+              <div class="heading1">
+                <div id="headingL">
+                  <h3>Osaka Castle</h3>
+                  <span>
+                    <i
+                      class="fa-solid fa-location-dot"
+                      style="padding-top: 0.7em; color: #1aaac4"
+                    ></i>
+                    <h5>Osaka, Japan</h5>
+                  </span>
+                </div>
+                <div id="headingR">
+                  <p>$156/<span>Pax</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div id="image">
+              <img
+                src="https://travelbird-images.imgix.net/35/5f/355f837bcfdaae36874afa6028a41208?auto=compress%2Cformat&crop=faces%2Cedges%2Ccenter&fit=crop&h=450&w=675"
+                alt=""
+              />
+              <div id="tag">⭐4.9</div>
+            </div>
+            <div id="content">
+              <div class="heading1">
+                <div id="headingL">
+                  <h3>Sorrento, Italy</h3>
+                  <span>
+                    <i
+                      class="fa-solid fa-location-dot"
+                      style="padding-top: 0.7em; color: #1aaac4"
+                    ></i>
+                    <h5>Amalfi, Italy</h5>
+                  </span>
+                </div>
+                <div id="headingR">
+                  <p>$172/<span>Pax</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div id="image">
+              <img
+                src="https://www.travelandleisure.com/thmb/pqFqLzMwubb0es_Ubg9o-KRpskk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/best-time-to-visit-AMALFI0622-e442428423b94e41a3817f3192ba0c2b.jpg"
+                alt=""
+              />
+              <div id="tag">⭐4.9</div>
+            </div>
+            <div id="content">
+              <div class="heading1">
+                <div id="headingL">
+                  <h3>Amalfi Coast</h3>
+                  <span>
+                    <i
+                      class="fa-solid fa-location-dot"
+                      style="padding-top: 0.7em; color: #1aaac4"
+                    ></i>
+                    <h5>Amalfi, Italy</h5>
+                  </span>
+                </div>
+                <div id="headingR">
+                  <p>$148/<span>Pax</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div id="image">
+              <img
+                src="https://cdn.osaka-info.jp/page_translation/content/b5da18b2-1442-11e8-9226-0af0cba29dd8.jpeg"
+                alt=""
+              />
+              <div id="tag">⭐4.9</div>
+            </div>
+            <div id="content">
+              <div class="heading1">
+                <div id="headingL">
+                  <h3>Osaka Castle</h3>
+                  <span>
+                    <i
+                      class="fa-solid fa-location-dot"
+                      style="padding-top: 0.7em; color: #1aaac4"
+                    ></i>
+                    <h5>Osaka, Japan</h5>
+                  </span>
+                </div>
+                <div id="headingR">
+                  <p>$156/<span>Pax</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div id="image">
+              <img
+                src="https://travelbird-images.imgix.net/35/5f/355f837bcfdaae36874afa6028a41208?auto=compress%2Cformat&crop=faces%2Cedges%2Ccenter&fit=crop&h=450&w=675"
+                alt=""
+              />
+              <div id="tag">⭐4.9</div>
+            </div>
+            <div id="content">
+              <div class="heading1">
+                <div id="headingL">
+                  <h3>Sorrento, Italy</h3>
+                  <span>
+                    <i
+                      class="fa-solid fa-location-dot"
+                      style="padding-top: 0.7em; color: #1aaac4"
+                    ></i>
+                    <h5>Amalfi, Italy</h5>
+                  </span>
+                </div>
+                <div id="headingR">
+                  <p>$172/<span>Pax</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="showMore">Show more</button>
+      </section>
+      <!-- Let's go on an adventure -->
+      <section id="adventure">
+        <div class="heading2">
+          <h3>Let's go on an adventure</h3>
+          <h5>Find and book a great experience</h5>
+        </div>
+        <!-- Cards -->
+        <div id="cards">
+          <div class="card">
+            <div id="image">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/51/9d/8d/best-island-in-the-philippines.jpg?w=1000&h=1000&s=1"
+                alt=""
+              />
+              <div id="tag">20% OFF</div>
+            </div>
+            <div id="content">
+              <h5>SC. Mindanou</h5>
+              <div>
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="padding-top: 0.7em; color: #1aaac4"
+                ></i>
+                <h6>Mindanou, Philippines</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Books tickets and go now! -->
+      <section id="tickets">
+        <div id="heading">
+          <h3>Book tickets and go now!</h3>
+          <button>Book now</button>
+        </div>
+        <!-- Video -->
+        <video autoplay muted loop src="video.mp4"></video>
+        <hr />
+      </section>
+      <!-- Footer -->
+
+      <footer>
+        <div ></div>
+        <div></div>
+        <div></div>
+      </footer>
+    </div>
+  </body>
+</html>
