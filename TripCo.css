@@ -1005,58 +1005,52 @@ body {
 /* Let's go on an adventure */
 /* Let's go on an adventure */
 /* Let's go on an adventure */
-#adventure #cards {
-  width: 100%;
-  margin-top: 3rem;
+
+#adventure .stamp-container {
+  margin-top: 60px;
+  margin-bottom: 150px;
+  height: auto;
   display: flex;
-  overflow-x: auto;
-  gap: 4.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-#adventure #cards .card {
-  width: 20%;
-  height: 30vw;
-  box-shadow: none;
-  border: none;
-  flex-shrink: 0;
+
+#adventure .stamp-cards {
+  background-color: rgba(255, 249, 240, 0.19);
+  border-radius: 15px;
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  margin-inline: auto;
+  border: 3px dashed black;
   position: relative;
 }
-#adventure #cards .card img {
-  height: 18vw;
-  width: 18vw;
-  object-fit: cover;
-  border-radius: 20px;
+
+#adventure .stamp-cards img {
+  width: 250px;
+  max-width: 100%;
+  height: 250px;
+  /* border-radius: 40px; */
 }
-#adventure #cards .card #tag {
+
+#adventure .stamp-cards p {
+  font-size: 1.6rem;
+}
+
+#adventure .stamp-cards .small-photo {
   position: absolute;
-  color: black;
-  background-color: #f9f9fa;
-  top: 3%;
-  right: 5%;
-  border-radius: 7px;
-  font-size: 0.7rem;
-  box-shadow: 10px #333333;
-  padding: 0.2rem 0.7rem;
-  font-weight: 700;
+  top: -7%;
+  left: -40%;
+  width: 200px;
+  height: 200px;
 }
-#adventure #cards .card #content {
-  display: flex;
-  flex-direction: column;
-}
-#adventure #cards .card #content div {
-  display: flex;
-  gap: 0.8rem;
-  align-items: center;
-  margin: 0;
-}
-#adventure #cards .card #content h5 {
-  margin: 0.4rem 0 0 0;
-  font-weight: 650;
-  font-size: 1.25vmax;
-}
-#adventure #cards .card #content h6 {
-  color: #afafaf;
-  font-size: 1.25vmax;
-  font-weight: 500;
+
+#adventure .stamp-cards .small-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* Book tickets and go now! */
@@ -1103,5 +1097,83 @@ footer {
   height: 45vh;
   padding: 3rem 0;
   display: grid;
-  grid-template-columns: 30% 40% 30%;
+  grid-template-columns: 25% 40% 25%;
+  justify-content: space-between;
+}
+footer #info #logo img {
+  height: 3vmin;
+  filter: drop-shadow(0px 0px 0px red) invert(75%);
+}
+
+footer #info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3vmax;
+}
+footer #info p {
+  font-size: 2.2vmin;
+  font-weight: 500;
+}
+footer #info .footer-icons {
+  display: flex;
+  gap: 5px;
+}
+
+footer #fastLinks {
+  display: flex;
+  justify-content: space-around;
+}
+footer #fastLinks .navLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+footer h4 {
+  font-weight: 500;
+  font-size: 2.8vmin;
+}
+footer #fastLinks .navLinks a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #5b5b5b;
+  font-size: 2.5vmin;
+}
+footer #newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3vmax;
+}
+footer #newsletter p {
+  font-weight: 400;
+  text-decoration: none;
+  color: #5b5b5b;
+  font-size: 2.5vmin;
+}
+
+footer #newsletter div {
+  position: relative;
+}
+footer #newsletter input {
+  text-align: left;
+  border: none;
+  width: 80%;
+  height: 7vmin;
+  font-weight: 500;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 1px rgba(87, 87, 87, 0.189);
+}
+footer #newsletter input::placeholder {
+  font-size: 2vmin;
+  font-weight: 400;
+  padding-left: 3%;
+
+  color: rgba(0, 0, 0, 0.688);
+}
+footer #newsletter button {
+  position: absolute;
+  right: 25%;
+  top: 25%;
+  border: none;
+  background-color: transparent;
+  font-size: 3.5vmin;
 }
