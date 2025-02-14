@@ -119,7 +119,6 @@ body {
   }
 }
 
-
 /* MAIN */
 /* MAIN */
 /* MAIN */
@@ -262,7 +261,7 @@ body {
 #main #calendar #info button {
   margin: 2rem 1em 0 0;
   display: flex;
-
+}
 /* Responsive */
 @media only screen and (max-width: 426px) {
   #bodyContainer {
@@ -564,5 +563,4 @@ body {
 #memories #content #right {
   width: 48%;
   height: 100%;
-}
 }
