@@ -626,7 +626,7 @@ body {
 /* MAIN */
 #main {
   position: relative;
-  height: 120vh;
+  height: 105vh;
 }
 #mainBG {
   width: 100%;
@@ -667,7 +667,7 @@ body {
   z-index: 1;
 
   width: 90%;
-  height: 16vmax;
+  height: 18vmax;
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -717,7 +717,7 @@ body {
 #main #calendar #info {
   display: grid;
   overflow-x: hidden;
-  padding-top: 16px;
+  padding-top: 2.5vmax;
   grid-template-columns: 18% 18% 18% 18% 18%;
   justify-content: space-between;
   column-gap: 2vw;
@@ -770,6 +770,173 @@ body {
   border: none;
   background-color: #17acc5;
   color: white;
+}
+
+/* Responsive */
+@media only screen and (max-width: 426px) {
+  #bodyContainer {
+    width: 95%;
+  }
+  #main {
+    height: 80vh;
+  }
+  #mainBG {
+    height: 60vmin;
+    border-radius: 12px;
+  }
+  #mainBG #title {
+    width: 65%;
+    top: 25%;
+    font-size: 3.4vmax;
+  }
+  #mainBG #subtitle {
+    top: 45%;
+    font-size: 1.7vmax;
+  }
+  #main #calendar {
+    height: 52%;
+    top: 60%;
+    border-radius: 12px;
+    padding: 2vh 3vh;
+  }
+  #main #calendar #nav {
+    display: grid;
+    grid-template-columns: 60% auto;
+    padding-bottom: 10px;
+  }
+  #main #calendar #nav #menu #hostelry {
+    text-decoration: none;
+  }
+
+  #main #calendar #nav #search i {
+    font-size: smaller;
+  }
+
+  #main #calendar #info {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 4vw;
+    row-gap: 2vw;
+    padding: 2vh;
+  }
+
+  #main #calendar #info button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0.2rem;
+    padding: 1vmin 2vmin;
+    border-radius: 4px;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 650px) {
+  #bodyContainer {
+    width: 95%;
+  }
+  #main {
+    height: 80vh;
+  }
+  #mainBG {
+    height: 60vmin;
+    border-radius: 12px;
+  }
+  #mainBG #title {
+    width: 65%;
+    top: 25%;
+    font-size: 3.4vmax;
+  }
+  #mainBG #subtitle {
+    top: 45%;
+    font-size: 1.7vmax;
+  }
+  #main #calendar {
+    height: 56%;
+    bottom: 10%;
+    border-radius: 12px;
+    padding: 2vh 3vh;
+  }
+  #main #calendar #nav {
+    display: grid;
+    grid-template-columns: 60% auto;
+    padding-bottom: 10px;
+  }
+  #main #calendar #nav #menu #hostelry {
+    text-decoration: none;
+  }
+
+  #main #calendar #nav #search i {
+    font-size: smaller;
+  }
+
+  #main #calendar #info {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 4vw;
+    row-gap: 2vw;
+    padding: 2vh;
+  }
+
+  #main #calendar #info button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0.2rem;
+    padding: 1vmin 2vmin;
+    border-radius: 4px;
+  }
+}
+@media only screen and (min-width: 650px) and (max-width: 930px) {
+  #bodyContainer {
+    width: 95%;
+  }
+  #main {
+    height: 90vh;
+  }
+  #mainBG {
+    height: 60vmin;
+    border-radius: 12px;
+  }
+  #mainBG #title {
+    width: 65%;
+    top: 25%;
+    font-size: 3.4vmax;
+  }
+  #mainBG #subtitle {
+    top: 45%;
+    font-size: 1.7vmax;
+  }
+  #main #calendar {
+    height: 50%;
+    bottom: 10%;
+    border-radius: 12px;
+    padding: 2vh 3vh;
+  }
+  #main #calendar #nav {
+    display: grid;
+    grid-template-columns: 60% auto;
+    padding-bottom: 10px;
+  }
+  #main #calendar #nav #menu #hostelry {
+    text-decoration: none;
+  }
+
+  #main #calendar #nav #search i {
+    font-size: smaller;
+  }
+
+  #main #calendar #info {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 4vw;
+    row-gap: 2vw;
+    padding: 2vh;
+  }
+
+  #main #calendar #info button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0.2rem;
+    padding: 1vmin 2vmin;
+    border-radius: 4px;
+  }
 }
 
 /* POPULAR PLACE */
@@ -1713,7 +1880,7 @@ body {
 /* Footer */
 /* Footer */
 
-\ footer {
+footer {
   width: 100%;
   height: 45vh;
   padding: 3rem 0;
