@@ -19,10 +19,9 @@ body {
   color: black;
   background-color: white;
 }
-#bodyContainer {
-  width: 85%;
+/* #bodyContainer {
   margin: 0 auto;
-}
+} */
 /* HEADING 1 */
 /* HEADING 1 */
 /* HEADING 1 */
@@ -57,7 +56,7 @@ body {
   margin: 0;
   color: rgb(134, 133, 133);
   font-size: 1.25vmax;
-  font-weight: 500;
+  font-weight: 600;
   display: flex;
   align-items: center;
 }
@@ -71,8 +70,8 @@ body {
 }
 .heading2 h3 {
   color: #333333;
-  font-size: 3vmax;
-  font-weight: 600;
+  /* font-size: 3vmax; */
+  font-weight: 700;
   padding-bottom: 1.5vmin;
 }
 .heading2 h5 {
@@ -130,12 +129,12 @@ body {
   text-wrap: nowrap;
 }
 #logging #signUp {
-  font-size: 2.3vmin;
+  font-size: 2.1vmin;
   color: white;
   font-weight: 500;
   background-color: #1ea5c4;
   padding: 0.6em 0.8em;
-  border-radius: 3px;
+  border-radius: 8px;
   text-wrap: nowrap;
 }
 /* Navbar */
@@ -535,7 +534,7 @@ body {
 .heading1 #headingR p {
   margin: 0;
   color: rgb(134, 133, 133);
-  font-size: 1.25vmax;
+  font-size: 1.2vmax;
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -550,8 +549,8 @@ body {
 }
 .heading2 h3 {
   color: #333333;
-  font-size: 3vmax;
-  font-weight: 600;
+  font-size: 3.5vmax;
+  font-weight: 700;
   padding-bottom: 1.5vmin;
 }
 .heading2 h5 {
@@ -1819,8 +1818,8 @@ body {
 #tickets #heading h3 {
   margin: 0;
   color: #333333;
-  font-weight: 600;
-  font-size: 6vmin;
+  font-weight: 700;
+  font-size: 6.2vmin;
 }
 #tickets #heading button {
   color: rgb(255, 255, 255);
@@ -1828,14 +1827,14 @@ body {
   border: none;
   text-align: center;
   width: fit-content;
-  border-radius: 7px;
+  border-radius: 12px;
   padding: 0.8vw 2.5vw;
-  font-size: 3vmin;
+  font-size: 3.5vmin;
 }
 #tickets video {
   margin: 3rem 0;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   border-radius: 30px;
   overflow: hidden;
   object-fit: cover;
@@ -1879,7 +1878,6 @@ body {
 /* Footer */
 /* Footer */
 /* Footer */
-
 footer {
   width: 100%;
   height: 45vh;
@@ -1895,15 +1893,16 @@ footer #info #logo img {
 footer #info {
   display: flex;
   flex-direction: column;
-  gap: 1.3vmax;
+  gap: 1.7vmax;
 }
 footer #info p {
   font-size: 2.2vmin;
-  font-weight: 500;
+  font-weight: 400;
 }
 footer #info .footer-icons {
   display: flex;
   gap: 5px;
+  font-size: 3vmin;
 }
 footer #fastLinks {
   display: flex;
@@ -1922,7 +1921,7 @@ footer #fastLinks .navLinks a {
   font-weight: 400;
   text-decoration: none;
   color: #5b5b5b;
-  font-size: 2.5vmin;
+  font-size: 2.35vmin;
 }
 footer #newsletter {
   display: flex;
@@ -1990,8 +1989,7 @@ footer #newsletter button {
   }
   footer #info p {
     font-size: 2.2vmin;
-    /* text-align: center; */
-    font-weight: 500;
+    font-weight: 400;
   }
   footer #info .footer-icons {
     display: flex;
